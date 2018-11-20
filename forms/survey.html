@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Survey</title>
+<meta charset="utf-8">
+<style>
+body {
+font-size: 1.3em;
+background-color: beige;
+
+}
+content{
+width:90%;
+margin:auto;
+}
+
+h1 {
+text-align:center;
+}
+
+form {
+margin-left:5%;
+}
+input {
+margin-bottom:2%;
+}
+input[type=submit] {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+</style>
+</head>
+<body>
+<h1>Music Survey</h1>
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  Name:<br>
+  <input type="text" name="name"><br>
+  Email:<br>
+  <input type="text" name="email">
+
+<fieldset>
+<legend>Select Your Favorite Type of Music</legend>
+<input type="checkbox" name="music1" value="Pop">Pop
+<br>
+<input type="checkbox" name="music2" value="Classical">Classical
+<br>
+<input type="checkbox" name="music3" value="Rock">Rock
+<br>
+<input type="checkbox" name="music4" value="Folk">Folk
+<br>
+<input type="checkbox" name="music5" value="Rap">Rap 
+<br>
+<input type="checkbox" name="music6" value="Other">Other
+<br>
+</fieldset>
+
+<fieldset>
+<legend>How often do you purchase CDs?</legend> 
+<input type="radio" name="purchase" value="weekly"> Weekly<br>
+<input type="radio" name="purchase" value="monthly"> Monthly<br>
+<input type="radio" name="purchase" value="peryear"> A few per year<br>
+<input type="radio" name="purchase" value="never"> Never
+</fieldset>  
+ 
+<h3>Select the locations you listen to music:</h3>
+<select name="locations">
+  <option value="home">At home</option>
+  <option value="work">At work</option>
+  <option value="car">In my car</option>
+  <option value="other">Other</option>
+</select>
+
+<h3>How often do you purchase CDs?</h3> 
+<input type="radio" name="purchase" value="weekly"> Weekly<br>
+<input type="radio" name="purchase" value="monthly"> Monthly<br>
+<input type="radio" name="purchase" value="peryear"> A few per year<br>
+<input type="radio" name="purchase" value="never"> Never
+
+<h3>What role does music play in your life?</h3>
+<TEXTAREA ROWS=3 COLS=60 >
+
+</TEXTAREA><br>
+<input type="submit" value="send survey">
+</form>
+</body>
+</html>
