@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Survey</title>
+<meta charset="utf-8">
+<style>
+body {
+font-size: 1.3em;
+background-color: beige;
+
+}
+content{
+width:90%;
+margin:auto;
+}
+
+h1 {
+text-align:center;
+}
+
+form {
+margin-left:5%;
+}
+input {
+margin-bottom:2%;
+}
+input[type=submit] {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+</style>
+</head>
+<body>
+<div class="column side">
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  Name:<br>
+  <input type="text" name="name"><br>
+  Email:<br>
+  <input type="text" name="email">
+  <input type="range" id="start" name="volume"
+         min="0" max="100 " onchange="showValue(this.value)" >
+  <span id="range">0</span>
+
+<fieldset>
+  <input list="options">
+  <datalist id="testoptions">
+    <option value="Option A">
+    <option value="Option B">
+    <option value="Option C">
+    <option value="Option D">
+    <option value="Option E">
+  </datalist>
+</fieldset>
+<input type="submit" src=submit.jpg>
+</form>
+</div>
+
+<div class="column middle">
+<a href="https://media.discordapp.net/attachments/464772174528380928/519501532631138314/image0.jpg?width=347&height=463"><img src="dog.jpg" width="200" height="200" title="My dog" alt="My dog"></a>
+<caption>Here's a picture of one of my dogs, Shadow</caption>
+<script type="text/javascript">
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+</body>
+</html>
